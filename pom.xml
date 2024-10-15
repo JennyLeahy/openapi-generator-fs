@@ -15,7 +15,7 @@
     <packaging>pom</packaging>
     <name>openapi-generator-project</name>
     <!-- RELEASE_VERSION -->
-    <version>7.10.0-SNAPSHOT</version>
+    <version>7.10.0-MODA1</version>
     <!-- /RELEASE_VERSION -->
     <url>https://github.com/openapitools/openapi-generator</url>
     <scm>
@@ -61,14 +61,16 @@
         <url>https://github.com/openapitools/openapi-generator/issues</url>
     </issueManagement>
     <distributionManagement>
-        <snapshotRepository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/content/repositories/snapshots</url>
-        </snapshotRepository>
         <repository>
-            <id>ossrh</id>
-            <url>https://oss.sonatype.org/service/local/staging/deploy/maven2/</url>
+            <id>central</id>
+            <name>moda-artifactory-primary-1-releases</name>
+            <url>https://moda.jfrog.io/artifactory/maven-local</url>
         </repository>
+        <snapshotRepository>
+            <id>snapshots</id>
+            <name>moda-artifactory-primary-1-snapshots</name>
+            <url>https://moda.jfrog.io/artifactory/maven-local</url>
+        </snapshotRepository>
     </distributionManagement>
     <licenses>
         <license>
